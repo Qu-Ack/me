@@ -1,19 +1,28 @@
 ---
-import "../styles/globals.css"
+import Meat from "../components/Meat.astro";
+import Nav from "../components/Nav.astro";
 ---
-
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<Meat
+			title="Daksh Sangal"
+			description="Oh my! You are going to read what I really think."
+		/>
 	</head>
 	<body>
-		<slot />
+		<div class="app">
+			<Nav />
+			<slot />
+		</div>
 	</body>
 </html>
+
+<style>
+	.app{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+</style>
