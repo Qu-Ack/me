@@ -3,11 +3,15 @@ const date = new Date();
 ---
 
 <footer>
-    &copy; {date.getFullYear()} Daksh Sangal, All Rights Reserved.
+    <hr />
+    <p>&copy; {date.getFullYear()} Daksh Sangal, All Rights Reserved.</p>
 </footer>
 
-
 <style>
+    footer hr {
+        width: 50%;
+    }
+
     footer {
         margin-top: 3em;
         padding: 2rem;
@@ -15,6 +19,8 @@ const date = new Date();
         text-align: center;
         color: var(--primary-text);
     }
+
+    footer p {
+        padding: 1em;
+    }
 </style>
-
-

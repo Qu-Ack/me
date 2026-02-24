@@ -1,9 +1,52 @@
 ---
+import { Image } from "astro:assets";
 import type { InferEntrySchema } from "astro:content";
 type Props = { blog_data: InferEntrySchema<"blog"> };
+import Fallback from "../assets/potd.jpeg";
+import FormatedDate from "./FormatedDate.astro";
 const { blog_data } = Astro.props;
 ---
 
 <div class="blog-card">
-    <h1>{blog_data.title}</h1>
+    <div class="image-cont">
+        <Image
+            src={blog_data.heroImage ? blog_data.heroImage : Fallback}
+            alt="hero_image"
+            class="image"
+        />
+    </div>
+    <h1 class="blog_title">{blog_data.title}</h1>
+    <div class="date"><FormatedDate date={blog_data.publishedAt} /></div>
 </div>
+
+<style>
+    .blog-card {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .blog-card .image-cont {
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .blog-card .blog_title {
+        margin: 0;
+        padding: 0.5em 0;
+    }
+
+    .blog-card .image-cont .image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .blog-card .date {
+        padding: 0;
+        margin: 0;
+        color: var(--primary-text);
+    }
+</style>
