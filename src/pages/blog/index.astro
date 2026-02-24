@@ -4,7 +4,9 @@ import Layout from "../../layouts/Layout.astro";
 import BlogCard from "../../components/BlogCard.astro";
 
 type Blog = CollectionEntry<"blog">;
-const allBlogPosts = await getCollection("blog");
+const allBlogPosts = await getCollection("blog", ({data}) => {
+    return data.unlisted == false
+});
 ---
 
 <Layout>
