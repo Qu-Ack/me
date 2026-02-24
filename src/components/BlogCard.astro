@@ -8,13 +8,6 @@ const { blog_data } = Astro.props;
 ---
 
 <div class="blog-card">
-    <div class="image-cont">
-        <Image
-            src={blog_data.heroImage ? blog_data.heroImage : Fallback}
-            alt="hero_image"
-            class="image"
-        />
-    </div>
     <h1 class="blog_title">{blog_data.title}</h1>
     <div class="date"><FormatedDate date={blog_data.publishedAt} /></div>
 </div>

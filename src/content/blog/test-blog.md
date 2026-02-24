@@ -93,12 +93,12 @@ def evaluate_polynomial(x: int) -> int:
 
 ## Table
 
-| Principle       | Bad Example         | Good Example              |
-|----------------|---------------------|---------------------------|
-| Naming          | `int d;`            | `int daysSinceCreation;`  |
-| Function Size   | 200-line function   | Single-responsibility fn  |
-| Comments        | Explain what        | Explain why               |
-| Magic Numbers   | `if (age > 18)`     | `if (age > LEGAL_AGE)`    |
+| Principle           | Bad Example         | Good Example              |
+|---------------------|---------------------|---------------------------|
+| Naming              | `int d;`            |  int daysSinceCreation;`  |
+| Function Size       | 200-line function   | Single-responsibility fn  |
+| Comments            | Explain what        | Explain why               |
+| Magic Numbers       | `if (age > 18)`     | `if (age > LEGAL_AGE)`    |
 
 ---
 
@@ -110,17 +110,6 @@ Check out the [Clean Code book](https://www.oreilly.com/library/view/clean-code-
 
 # A Final Thought
 
-Writing clean code is not about being clever — it's about being **kind to your future self** and your teammates. Start small, be consistent, and refactor often.
-title: The Art of Clean Code
-publishedAt: 2025-02-16 
-updatedAt: 2025-02-16
-tags:
-    - Programming
-    - Clean Code
-unlisted: false
-slug: art-of-clean-code
-heroImage: '../../assets/potd.jpeg'
----
 
 # The Art Of Clean Code
 
