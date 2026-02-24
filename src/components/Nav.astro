@@ -88,4 +88,27 @@ import NavLink from "./NavLink.astro";
         display: flex;
         gap: 1em;
     }
+
+    @media (max-width: 768px) {
+        header {
+            width: 90%;
+            margin: 0;
+            padding: 1rem 0;
+        }
+        
+        .links {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .internal-links {
+            gap: 1rem;
+            font-size: 1rem;
+        }
+        
+        .social-links {
+            justify-content: center;
+        }
+    }
 </style>

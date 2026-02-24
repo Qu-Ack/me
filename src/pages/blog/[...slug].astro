@@ -39,6 +39,17 @@ const { Content } = await render(post);
     p {
         font-size: 1.3em;
     }
+
+    @media (max-width: 768px) {
+        .blog-content {
+            width: 90%;
+            margin: 0 auto;
+        }
+        
+        p {
+            font-size: 1.1em;
+        }
+    }
 </style>
 
 <Layout>
