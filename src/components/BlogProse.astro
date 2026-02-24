@@ -1,0 +1,8 @@
+---
+import type { InferEntrySchema } from "astro:content";
+
+type Props = { prose_data: InferEntrySchema<"blog"> };
+const { prose_data } = Astro.props;
+---
+
+<h1>{prose_data.title}</h1>

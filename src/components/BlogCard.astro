@@ -1,0 +1,9 @@
+---
+import type { InferEntrySchema } from "astro:content";
+type Props = { blog_data: InferEntrySchema<"blog"> };
+const { blog_data } = Astro.props;
+---
+
+<div class="blog-card">
+    <h1>{blog_data.title}</h1>
+</div>

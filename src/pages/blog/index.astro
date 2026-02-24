@@ -1,0 +1,22 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+import BlogCard from "../../components/BlogCard.astro";
+
+type Blog = CollectionEntry<"blog">;
+const allBlogPosts = await getCollection("blog");
+---
+
+<Layout>
+    <ol>
+        {
+            allBlogPosts.map((blog: Blog) => {
+                return (
+                    <a href={blog.id}>
+                        <BlogCard blog_data={blog.data} />
+                    </a>
+                );
+            })
+        }
+    </ol>
+</Layout>
