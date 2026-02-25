@@ -44,12 +44,27 @@ const { Content } = await render(post);
         font-size: 1.3em;
     }
 
+    th {
+        padding: 1em;
+        text-align: center;
+        font-size: 1.1em;
+        border: 1px solid var(--accent-1);
+    }
+
+    td {
+        border-left: 1px solid var(--accent-1);
+        border-right: 1px solid var(--accent-1);
+        border-bottom: 0.5px solid var(--accent-1);
+        padding: 1em;
+        text-align: center;
+    }
+
     @media (max-width: 768px) {
         .blog-content {
             width: 90%;
             margin: 0 auto;
         }
-        
+
         p {
             font-size: 1.1em;
         }
