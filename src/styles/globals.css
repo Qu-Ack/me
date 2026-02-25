@@ -10,7 +10,7 @@ html {
 }
 @font-face {
 	font-family: "Cardo";
-	src: url("/fonts/Cardo/Cardo-Regular.ttf");
+	src: url("/me/fonts/Cardo/Cardo-Regular.ttf");
 	font-weight: 400;
 	font-display: swap;
 	font-style: normal;
@@ -19,7 +19,7 @@ html {
 @font-face {
 	font-family: "Cardo";
 	font-weight: 700;
-	src: url("/fonts/Cardo/Cardo-Bold.ttf");
+	src: url("/me/fonts/Cardo/Cardo-Bold.ttf");
 	font-style: normal;
 	font-display: swap;
 }
