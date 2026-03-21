@@ -5,7 +5,7 @@ updatedAt: 2025-02-16
 tags:
     - Programming
     - Clean Code
-unlisted: false
+unlisted: true
 slug: art-of-clean-code
 heroImage: '../../assets/potd.jpeg'
 ---

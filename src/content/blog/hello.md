@@ -5,7 +5,7 @@ updatedAt: 2025-01-16
 tags:
     - Programming
     - Clean Code
-unlisted: false
+unlisted: true
 slug: hohaha
 heroImage: '../../assets/potd.jpeg'
 ---
